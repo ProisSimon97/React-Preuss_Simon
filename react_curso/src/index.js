@@ -4,9 +4,24 @@ import "./index.css";
 import Estudiante from "./Estudiante";
 import reportWebVitals from "./reportWebVitals";
 
+let est1 = {
+  nombre: "Simon",
+  apellido: "Preuss",
+};
+
+let est2 = {
+  nombre: "Ana",
+  apellido: "Pacino",
+};
+
+let est3 = {
+  nombre: "Juan",
+  apellido: "Casas",
+};
+
 ReactDOM.render(
   <React.StrictMode>
-    <Estudiante />
+    <Estudiante est1={est1} est2={est2} est3={est3} />
   </React.StrictMode>,
   document.getElementById("root")
 );
